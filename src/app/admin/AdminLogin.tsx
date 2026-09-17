@@ -91,7 +91,7 @@ export default function AdminLogin() {
             <span>SECURITY_NOTICE</span>
           </div>
           <p>
-            Default developer passcode is configured in <code className="text-neutral-300">.env.local</code> as <code className="text-white bg-black px-1">cyber2077</code>.
+            Default developer passcode is configured in <code className="text-neutral-300">.env.local</code> as <code className="text-white bg-black px-1">none of your business.</code>.
           </p>
         </div>
       </div>
