@@ -5,37 +5,37 @@ export default function Interests() {
   const interests = [
     {
       code: "SPEC_01",
-      name: "Web Architecture",
-      detail: "React, Next.js, and high-frequency real-time web UI engineering.",
+      name: "Hardware",
+      detail: "Using esp32 and arduino to make random stuffs.",
     },
     {
       code: "SPEC_02",
-      name: "Neural Networks & AI",
-      detail: "Large Language Models, cognitive agents, prompt matrixing, and tool interop.",
+      name: "GameDev",
+      detail: "Using game engines like GODOT and UNITY. Working on a game rn.",
     },
     {
       code: "SPEC_03",
-      name: "Open Source Commons",
-      detail: "Contributing to decentralized libraries, reviewing pull requests, and public software tooling.",
+      name: "CyberSecurity",
+      detail: "Still learning...",
     },
     {
       code: "SPEC_04",
-      name: "Cybernetic UI/UX",
-      detail: "High-contrast minimalist dark aesthetics, responsive HUDs, and friction-free micro-interactions.",
+      name: "Ethical Hacking",
+      detail: "Still learning...",
     },
   ];
 
   const currentlyPlaying = [
-    { title: "Elden Ring", platform: "PC // STEAM", status: "NG+ RUN" },
-    { title: "Valorant", platform: "RIOT NET", status: "COMPETITIVE" },
-    { title: "Stardew Valley", platform: "CO-OP MATRIX", status: "CHILL MODE" },
+    { title: "R.E.P.O", platform: "PC // STEAM", status: "Comedy Horror" },
+    { title: "MInecraft", platform: "Minecraft", status: "Chill" },
+    { title: "Assassin's Creed Rougue", platform: "PC", status: "Story" },
   ];
 
   const allTimeFavorites = [
-    { title: "The Witcher 3: Wild Hunt", year: "2015" },
-    { title: "Cyberpunk 2077", year: "2020" },
-    { title: "Minecraft", year: "2011" },
-    { title: "Portal 2", year: "2011" },
+    { title: "Grand Theft Auto 5", year: "2019" },
+    { title: "Uncharted 4", year: "2020" },
+    { title: "Minecraft", year: "2021" },
+    { title: "Assassin's Creed 2 Trilogy", year: "2025" },
   ];
 
   return (
