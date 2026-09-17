@@ -1,0 +1,148 @@
+export interface ProjectImage {
+  url: string;
+  caption: string;
+  alt: string;
+}
+
+export interface Project {
+  slug: string;
+  id: string;
+  title: string;
+  tagline: string;
+  status: "ONLINE" | "DEPLOYED" | "STANDBY" | "ARCHIVED";
+  timeline: string;
+  role: string;
+  description: string;
+  fullDescription: string;
+  architectureNotes?: string[];
+  features: string[];
+  tags: string[];
+  githubUrl: string;
+  liveUrl: string;
+  images: ProjectImage[];
+}
+
+export const PROJECTS: Project[] = [
+  {
+    slug: "project-alpha",
+    id: "0x01",
+    title: "Project Alpha",
+    tagline: "High-Frequency Task Optimization Matrix",
+    status: "DEPLOYED",
+    timeline: "Q3 2026",
+    role: "Lead Architect & Frontend Engineer",
+    description: "A task management cyber-matrix built with React and Tailwind CSS. Optimizes human routine algorithms, real-time telemetry, and multi-device state sync.",
+    fullDescription: `Project Alpha is an experimental task operating system crafted to eliminate decision fatigue. Built with an offline-first architecture, it synchronizes user directives across cloud nodes with sub-50ms latency.\n\nFeaturing an ultra-responsive keyboard-centric interface, customizable hotkey macros, and visual prioritization graphs, Alpha treats your personal productivity like a mission-critical terminal stream.`,
+    architectureNotes: [
+      "Optimistic UI state caching with IndexedDB for frictionless offline operation.",
+      "WebSocket sync channel with automated conflict resolution algorithm.",
+      "Minimalist dark HUD presentation designed for OLED efficiency.",
+      "Built with Next.js App Router and responsive Tailwind utility styling.",
+    ],
+    features: [
+      "Sub-50ms State Synchronization",
+      "Keyboard-Driven Command Matrix",
+      "Offline-First Distributed Cache",
+      "Real-Time Telemetry & Progress Graph",
+      "Customizable Cyberpunk Visual Themes",
+    ],
+    tags: ["REACT", "TAILWIND_CSS", "NODE.JS", "TYPESCRIPT", "INDEXEDDB"],
+    githubUrl: "https://github.com",
+    liveUrl: "https://example.com",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80",
+        caption: "Main Telemetry Dashboard & Active Task HUD",
+        alt: "Cyberpunk dashboard interface",
+      },
+      {
+        url: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80",
+        caption: "Terminal Mode & High-Throughput Batch Processing",
+        alt: "Terminal stream view",
+      },
+      {
+        url: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+        caption: "System Metrics & Distributed Node Topology",
+        alt: "Hardware circuit tech background",
+      },
+    ],
+  },
+  {
+    slug: "project-beta",
+    id: "0x02",
+    title: "Project Beta",
+    tagline: "Neural Linguistic Parser & Readability Scorer",
+    status: "ONLINE",
+    timeline: "Q2 2026",
+    role: "AI & Full-Stack Engineer",
+    description: "An AI-powered neural text analyzer that computes readability metrics, semantic vectors, and syntax entropy in real time.",
+    fullDescription: `Project Beta interfaces with large language models to dissect complex prose, code comments, and technical specifications. It generates instant semantic heatmaps, flagging ambiguity, passive construction, and complexity clusters.\n\nDesigned for technical authors, netrunners, and developers who demand surgical precision in their written documentation and technical communications.`,
+    architectureNotes: [
+      "Streaming token analysis with low-latency edge API functions.",
+      "Interactive SVG readability radar and sentiment distribution charts.",
+      "Local vector embeddings computation using WebAssembly.",
+      "Instant copy/export pipelines supporting Markdown and JSON.",
+    ],
+    features: [
+      "Real-time Syntax & Entropy Heatmaps",
+      "Multimodal Token Streaming Response",
+      "Custom Fine-Tuned Stylistic Heuristics",
+      "Exportable Audit Dossiers in Markdown",
+      "Zero-Retention Privacy-Focused Pipeline",
+    ],
+    tags: ["NEXT.JS", "OPENAI", "TYPESCRIPT", "TAILWIND", "WEBASSEMBLY"],
+    githubUrl: "https://github.com",
+    liveUrl: "https://example.com",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
+        caption: "Neural Vector Analysis & Semantic Heatmap Visualizer",
+        alt: "Abstract neural digital art",
+      },
+      {
+        url: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+        caption: "Edge Node Processing & Token Stream Console",
+        alt: "Server racks and digital data stream",
+      },
+    ],
+  },
+  {
+    slug: "project-gamma",
+    id: "0x03",
+    title: "Project Gamma",
+    tagline: "2D Cyber Maze Spatial Simulation",
+    status: "STANDBY",
+    timeline: "Q1 2026",
+    role: "Gameplay & Systems Programmer",
+    description: "A lightweight 2D spatial simulation built in Unity. Features dynamic A* pathfinding, real-time collision detection, and procedural maze generation.",
+    fullDescription: `Project Gamma is an arcade cyber-stealth experiment where players navigate dynamically reconfiguring security grids. Every sector is procedurally assembled with varying guard drone patrol routines, laser gates, and electronic countermeasures.\n\nThe project focused on deterministic physics simulation, custom shader pipelines for scanlines and CRT distortion, and responsive 60fps mobile and web performance.`,
+    architectureNotes: [
+      "Procedural maze assembly utilizing modified Prim's algorithm.",
+      "Optimized A* navigation mesh with multithreaded path recalculation.",
+      "Custom HLSL shaders generating authentic scanlines and chromatic jitter.",
+      "Cross-compiled for WebGL deployment with zero plugin overhead.",
+    ],
+    features: [
+      "Procedural Sector Generation",
+      "Dynamic Enemy Patrol Heuristics",
+      "Custom CRT & Scanline Shader Pipeline",
+      "Synthesized Interactive 8-bit Audio",
+      "Leaderboard Synchronization via REST API",
+    ],
+    tags: ["C#", "UNITY", "GAME_DEV", "HLSL_SHADERS", "WEBGL"],
+    githubUrl: "https://github.com",
+    liveUrl: "https://example.com",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80",
+        caption: "Sector 04 Procedural Security Grid with Dynamic Lighting",
+        alt: "Retro computer hardware and glowing screens",
+      },
+      {
+        url: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=80",
+        caption: "Drone Patrol Vectors & Collision Boundary Debugger",
+        alt: "Gaming setup with neon illumination",
+      },
+    ],
+  },
+];

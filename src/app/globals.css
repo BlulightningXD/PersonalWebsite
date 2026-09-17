@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  --cyber-primary: #00f0ff;
+  --cyber-secondary: #ff003c;
+  --cyber-glow: rgba(0, 240, 255, 0.4);
+  --cyber-glow-soft: rgba(0, 240, 255, 0.08);
+  --cyber-border: rgba(0, 240, 255, 0.3);
+  --cyber-bg-tint: rgba(0, 240, 255, 0.02);
+}
+
+/* Cyberpunk Chamfered / Angled Corners */
+.cyber-cut {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 14px) 0,
+    100% 14px,
+    100% 100%,
+    14px 100%,
+    0 calc(100% - 14px)
+  );
+}
+
+.cyber-cut-sm {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 8px) 0,
+    100% 8px,
+    100% 100%,
+    8px 100%,
+    0 calc(100% - 8px)
+  );
+}
+
+.cyber-cut-corner {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 12px) 0,
+    100% 12px,
+    100% 100%,
+    0 100%
+  );
+}
+
+/* Custom selection */
+::selection {
+  background-color: var(--cyber-primary);
+  color: #000000;
+}
+
+/* Subtle scanlines effect on cards if desired */
+.cyber-panel {
+  position: relative;
+  background-color: rgba(10, 10, 10, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.25s ease-out;
+}
+
+.cyber-panel:hover {
+  border-color: var(--cyber-border);
+  box-shadow: 0 0 20px var(--cyber-glow-soft);
+}
